@@ -1,0 +1,17 @@
+def search_words(text, words):
+    found_words = []
+    # Split the text into individual words using delimiters
+    # such as spaces and punctuation marks
+    word_list = text.split()
+
+    # Iterate through each word in the text
+    for word in word_list:
+        # Check if the current word is in the list of search words
+        if word in words:
+            found_words.append(word)
+
+    return found_words
+
+# Example usage
+text = "This is an example text for word search. We want to find the words: example, text, search."
+search_words(text, ["example", "text", "search"])
